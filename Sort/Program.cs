@@ -68,6 +68,8 @@
             using (var streamWriter = new StreamWriter(fileName, true, Encoding.UTF8, 1_485_760))
             {
                 var cycleStopwatch = new Stopwatch();
+                cycleStopwatch.Start();
+
                 int resultIndex = 0;
                 long counter = 0;
                 while (true)
@@ -97,10 +99,10 @@
                     counter++;
                     if (counter % 1_000_000 == 0)
                     {
-                        stopwatch.Stop();
+                        cycleStopwatch.Stop();
                         Console.SetCursorPosition(0, Console.CursorTop - 1);
                         Console.WriteLine($"{counter} lines ready in {cycleStopwatch.Elapsed}");
-                        stopwatch.Start();
+                        cycleStopwatch.Start();
                     }
                 }
             }
