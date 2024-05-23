@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CreateBigFile": {
+      "commandName": "Project",
+      "commandLineArgs": "1048576 1048576000 8"
+    }
+  }
+}

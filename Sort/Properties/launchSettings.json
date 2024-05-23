@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Sort": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\\\Users\\\\Алексей\\\\source\\\\repos\\\\CreateBigFile\\\\CreateBigFile\\\\bin\\\\Debug\\\\net8.0\\\\bigfile.txt result_final.txt 104857600"
+    }
+  }
+}
